@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결과 상세 - LectureAI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>LectureAI</h1>
+                <p class="tagline">강의자료 변환기</p>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link">홈</a>
+                <a href="#" class="nav-link">사용법</a>
+                <a href="#" class="nav-link">예제</a>
+                <a href="#" class="nav-link">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container detail-layout">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>최근 변환</h3>
+                <div class="recent-list">
+                    <div class="recent-item active">
+                        <span class="file-icon">📄</span>
+                        <span class="file-name">수학 강의 1</span>
+                    </div>
+                    <div class="recent-item">
+                        <span class="file-icon">🎥</span>
+                        <span class="file-name">영어 발음 강좌</span>
+                    </div>
+                    <div class="recent-item">
+                        <span class="file-icon">📸</span>
+                        <span class="file-name">화학 실험 노트</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>설정</h3>
+                <div class="settings-list">
+                    <button class="settings-btn">⚙️ 환경설정</button>
+                    <button class="settings-btn">📊 통계</button>
+                    <button class="settings-btn">💾 저장된 항목</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content detail-content">
+            <div class="detail-header">
+                <div class="back-button">
+                    <a href="index.html">← 돌아가기</a>
+                </div>
+                <div class="file-info">
+                    <div class="file-info-left">
+                        <h1>수학 강의 1</h1>
+                        <p class="file-meta">📄 이미지 파일 | 2026년 5월 18일 | 2.4 MB</p>
+                    </div>
+                    <div class="file-info-right">
+                        <div class="file-preview">
+                            <div class="preview-placeholder">📸</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tabs">
+                <button class="detail-tab-btn active">📝 전체 내용</button>
+                <button class="detail-tab-btn">📋 요약</button>
+                <button class="detail-tab-btn">🏷️ 키워드</button>
+                <button class="detail-tab-btn">📤 내보내기</button>
+            </div>
+
+            <div class="detail-tab-content active">
+                <div class="content-section">
+                    <div class="content-header">
+                        <h2>전체 내용</h2>
+                        <div class="content-actions">
+                            <button class="icon-btn">📋</button>
+                            <button class="icon-btn">🔍</button>
+                            <button class="icon-btn">🔤</button>
+                        </div>
+                    </div>
+
+                    <div class="search-box">
+                        <input type="text" placeholder="내용에서 검색...">
+                        <span class="search-count"></span>
+                    </div>
+
+                    <div class="text-content">
+                        <p><strong>제목: 미분과 적분의 기초</strong></p>
+                        
+                        <h3>1. 미분의 개념</h3>
+                        <p>미분은 함수의 변화율을 구하는 과정입니다. 어떤 점에서의 순간 변화율을 구하기 위해 극한의 개념을 사용합니다.</p>
+                        <p><strong>정의:</strong> 함수 f(x)의 x=a에서의 미분값은 다음과 같이 정의됩니다.</p>
+                        <p>f'(a) = lim(h→0) [f(a+h) - f(a)] / h</p>
+
+                        <h3>2. 미분의 기본 공식</h3>
+                        <ul class="formula-list">
+                            <li>상수함수: (c)' = 0</li>
+                            <li>거듭제곱함수: (x^n)' = n·x^(n-1)</li>
+                            <li>합의 미분: (f+g)' = f' + g'</li>
+                            <li>곱의 미분: (f·g)' = f'·g + f·g'</li>
+                            <li>몫의 미분: (f/g)' = (f'·g - f·g') / g²</li>
+                        </ul>
+
+                        <h3>3. 적분의 개념</h3>
+                        <p>적분은 미분의 역연산입니다. 미분을 통해 얻은 도함수로부터 원래의 함수를 구하는 과정을 부정적분이라고 합니다.</p>
+                        <p><strong>정의:</strong> F'(x) = f(x)일 때, F(x)를 f(x)의 부정적분이라고 하고 다음과 같이 표기합니다.</p>
+                        <p>∫f(x)dx = F(x) + C (C는 적분상수)</p>
+
+                        <h3>4. 적분의 기본 공식</h3>
+                        <ul class="formula-list">
+                            <li>상수함수: ∫c dx = cx + C</li>
+                            <li>거듭제곱함수: ∫x^n dx = x^(n+1)/(n+1) + C (n≠-1)</li>
+                            <li>합의 적분: ∫(f+g)dx = ∫f dx + ∫g dx</li>
+                            <li>상수배: ∫c·f(x)dx = c·∫f(x)dx</li>
+                        </ul>
+
+                        <h3>5. 실제 응용</h3>
+                        <p>미분과 적분은 다양한 분야에서 활용됩니다:</p>
+                        <ul class="application-list">
+                            <li><strong>물리학:</strong> 속도, 가속도, 운동 분석</li>
+                            <li><strong>경제학:</strong> 한계비용, 한계수익 분석</li>
+                            <li><strong>공학:</strong> 최적화 문제 해결</li>
+                            <li><strong>통계학:</strong> 확률 분포 계산</li>
+                        </ul>
+
+                        <h3>6. 정리 및 핵심 포인트</h3>
+                        <p>이번 강의에서 배운 핵심 내용:</p>
+                        <ul class="key-points">
+                            <li>미분은 순간 변화율을 구하는 과정</li>
+                            <li>적분은 미분의 역연산</li>
+                            <li>기본 공식들을 암기하고 활용할 수 있어야 함</li>
+                            <li>실제 문제에 적용하는 능력이 중요</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tab-content" style="display: none;">
+                <div class="summary-section">
+                    <h2>강의 요약</h2>
+                    <div class="summary-box">
+                        <p>이 강의는 미분과 적분의 기초 개념을 다룹니다. 먼저 미분의 정의와 기본 공식들을 학습하고, 이를 통해 적분의 개념을 이해합니다. 미분은 함수의 순간 변화율을 구하는 과정이며, 적분은 이의 역연산입니다.</p>
+                        
+                        <p>주요 학습 내용으로는 기본 미분 공식(상수, 거듭제곱, 합, 곱, 몫의 미분)과 적분 공식들이 있습니다. 마지막으로 물리학, 경제학, 공학, 통계학 등 다양한 분야에서의 실제 응용 사례를 살펴봅니다.</p>
+
+                        <p>학생들은 이 강의를 통해 미분과 적분의 기본 개념을 이해하고, 주요 공식들을 암기하며, 실제 문제에 적용하는 능력을 기를 수 있습니다.</p>
+                    </div>
+
+                    <h3>주요 섹션</h3>
+                    <div class="section-list">
+                        <div class="section-item">
+                            <span class="section-number">1</span>
+                            <div class="section-text">
+                                <h4>미분의 개념</h4>
+                                <p>함수의 순간 변화율과 극한의 개념</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <span class="section-number">2</span>
+                            <div class="section-text">
+                                <h4>미분의 기본 공식</h4>
+                                <p>상수, 거듭제곱, 합, 곱, 몫의 미분</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <span class="section-number">3</span>
+                            <div class="section-text">
+                                <h4>적분의 개념</h4>
+                                <p>미분의 역연산으로서의 적분</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <span class="section-number">4</span>
+                            <div class="section-text">
+                                <h4>적분의 기본 공식</h4>
+                                <p>부정적분의 주요 공식들</p>
+                            </div>
+                        </div>
+                        <div class="section-item">
+                            <span class="section-number">5</span>
+                            <div class="section-text">
+                                <h4>실제 응용</h4>
+                                <p>다양한 분야에서의 활용 사례</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tab-content" style="display: none;">
+                <div class="keywords-section">
+                    <h2>주요 키워드 및 개념</h2>
+                    
+                    <div class="keyword-category">
+                        <h3>📌 핵심 개념</h3>
+                        <div class="keyword-grid">
+                            <div class="keyword-card">
+                                <span class="keyword-badge primary">미분</span>
+                                <p>함수의 순간 변화율</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge primary">적분</span>
+                                <p>미분의 역연산</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge primary">극한</span>
+                                <p>무한에 가까워지는 값</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge primary">도함수</span>
+                                <p>미분으로 얻은 함수</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="keyword-category">
+                        <h3>📐 주요 공식</h3>
+                        <div class="keyword-grid">
+                            <div class="keyword-card">
+                                <span class="keyword-badge secondary">거듭제곱 미분</span>
+                                <p>(x^n)' = n·x^(n-1)</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge secondary">곱의 미분</span>
+                                <p>(f·g)' = f'·g + f·g'</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge secondary">부정적분</span>
+                                <p>∫f(x)dx = F(x) + C</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge secondary">거듭제곱 적분</span>
+                                <p>∫x^n dx = x^(n+1)/(n+1) + C</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="keyword-category">
+                        <h3>🎯 응용 분야</h3>
+                        <div class="keyword-grid">
+                            <div class="keyword-card">
+                                <span class="keyword-badge accent">물리학</span>
+                                <p>속도, 가속도 분석</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge accent">경제학</span>
+                                <p>한계비용, 수익 분석</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge accent">공학</span>
+                                <p>최적화 문제</p>
+                            </div>
+                            <div class="keyword-card">
+                                <span class="keyword-badge accent">통계학</span>
+                                <p>확률 분포</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="detail-tab-content" style="display: none;">
+                <div class="export-section">
+                    <h2>결과 내보내기</h2>
+                    
+                    <div class="export-options">
+                        <div class="export-card">
+                            <div class="export-icon">📄</div>
+                            <h3>텍스트 파일</h3>
+                            <p>전체 내용을 TXT 파일로 다운로드</p>
+                            <button class="btn btn-primary">TXT 다운로드</button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon">📝</div>
+                            <h3>마크다운</h3>
+                            <p>마크다운 형식으로 구조화된 내용</p>
+                            <button class="btn btn-primary">MD 다운로드</button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon">📊</div>
+                            <h3>PDF</h3>
+                            <p>인쇄 가능한 PDF 형식</p>
+                            <button class="btn btn-primary">PDF 다운로드</button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon">📋</div>
+                            <h3>클립보드</h3>
+                            <p>전체 내용을 클립보드에 복사</p>
+                            <button class="btn btn-secondary">복사</button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon">🔗</div>
+                            <h3>공유 링크</h3>
+                            <p>이 결과를 다른 사람과 공유</p>
+                            <button class="btn btn-secondary">공유 링크 생성</button>
+                        </div>
+
+                        <div class="export-card">
+                            <div class="export-icon">💾</div>
+                            <h3>저장</h3>
+                            <p>내 라이브러리에 저장</p>
+                            <button class="btn btn-secondary">저장</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 아이원트 고홈 야르렁</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LectureAI - 강의자료 변환기</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>LectureAI</h1>
+                <p class="tagline">강의자료 변환기</p>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link">홈</a>
+                <a href="#" class="nav-link">사용법</a>
+                <a href="#" class="nav-link">예제</a>
+                <a href="#" class="nav-link">문의</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>최근 변환</h3>
+                <div class="recent-list">
+                    <div class="recent-item">
+                        <span class="file-icon">📄</span>
+                        <span class="file-name">수학 강의 1</span>
+                    </div>
+                    <div class="recent-item">
+                        <span class="file-icon">🎥</span>
+                        <span class="file-name">영어 발음 강좌</span>
+                    </div>
+                    <div class="recent-item">
+                        <span class="file-icon">📸</span>
+                        <span class="file-name">화학 실험 노트</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>설정</h3>
+                <div class="settings-list">
+                    <button class="settings-btn">⚙️ 환경설정</button>
+                    <button class="settings-btn">📊 통계</button>
+                    <button class="settings-btn">💾 저장된 항목</button>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="upload-section">
+                <h2>강의자료 업로드</h2>
+                <div class="upload-area">
+                    <div class="upload-icon">📁</div>
+                    <h3>파일을 드래그하거나 클릭하세요</h3>
+                    <p>지원 형식: 이미지(JPG, PNG), 영상(MP4, WebM)</p>
+                </div>
+            </div>
+
+            <div class="processing-section" style="display: none;">
+                <h2>처리 중...</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text">파일 분석 중: 0%</p>
+            </div>
+
+            <div class="result-section" style="display: none;">
+                <div class="result-header">
+                    <h2>변환 결과</h2>
+                    <div class="result-actions">
+                        <button class="btn btn-secondary">📋 복사</button>
+                        <button class="btn btn-secondary">⬇️ 다운로드</button>
+                        <button class="btn btn-secondary">🔄 새로 변환</button>
+                    </div>
+                </div>
+
+                <div class="result-content">
+                    <div class="result-tabs">
+                        <button class="tab-btn active">📝 텍스트</button>
+                        <button class="tab-btn">📋 요약</button>
+                        <button class="tab-btn">🏷️ 키워드</button>
+                    </div>
+
+                    <div class="tab-content active">
+                        <div class="text-output">
+                            <p>변환된 텍스트가 여기 표시됩니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" style="display: none;">
+                        <div class="summary-output">
+                            <p>요약이 여기 표시됩니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" style="display: none;">
+                        <div class="keywords-output">
+                            <span class="keyword-badge">키워드 1</span>
+                            <span class="keyword-badge">키워드 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 아이 원트 고홈</p>
+    </footer>
+</body>
+</html>
